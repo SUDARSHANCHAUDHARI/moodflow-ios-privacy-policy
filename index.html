@@ -26,12 +26,12 @@
     <article>
       <h1>MoodFlow Privacy Policy</h1>
       <p><strong>Effective Date:</strong> July 5, 2026</p>
-      <p><em>Last updated: July 5, 2026</em></p>
-      <p><strong>Version:</strong> 1.0.0</p>
+      <p><em>Last updated: October 19, 2026</em></p>
+      <p><strong>Version:</strong> 1.1.0</p>
       <p>MoodFlow (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is a mood tracker for iOS, developed by SudarshanTechLabs. MoodFlow is a mood tracker with coping strategies and optional AI insights. This Privacy Policy explains what information the app does and does not collect, how it is used, and the choices you have. By installing or using MoodFlow you agree to the practices described below.</p>
 
       <h2>Overview</h2>
-      <p>MoodFlow is designed to be <strong>private by default</strong>. Your data is stored locally on your device. We do not operate accounts, servers, or databases that hold your personal information, and we cannot see the content you create in the app.</p>
+      <p>MoodFlow is designed to be <strong>private by default</strong>. Your data is stored locally on your device. We do not operate accounts, servers, or databases that hold your personal information, and we cannot see the content you create in the app. The one exception is optional AI weekly insights, which send your recent mood entries to Google Gemini when you request them (see Third-Party Services).</p>
 
       <h2>Information We Collect</h2>
       <h3>Location Data</h3>
@@ -50,8 +50,8 @@
 
       <h2>How We Use Your Information</h2>
       <ul>
-        <li>To provide the features you use, entirely on your device.</li>
-        <li>We do <strong>not</strong> sell, rent, or share your personal data with anyone.</li>
+        <li>To provide the features you use on your device. The one exception is AI weekly insights, which send mood entries to Google Gemini when you tap Generate weekly insights.</li>
+        <li>We do <strong>not</strong> sell, rent, or share your personal data with anyone, except sending mood entries to Google Gemini when you request AI weekly insights.</li>
         <li>We do <strong>not</strong> use advertising identifiers or track you across apps or websites.</li>
       </ul>
 
@@ -59,11 +59,13 @@
       <h3>Data Storage</h3>
       <ul>
         <li>Your content is stored locally using Apple&#x27;s standard on-device storage.</li>
+        <li>Mood entries sent for AI weekly insights are processed by Google under its terms. MoodFlow keeps no copy on any server.</li>
         <li>If you have iCloud backup enabled for your device, your app data may be included in your own encrypted Apple backup, governed by <a href="https://www.apple.com/legal/privacy/">Apple&#x27;s Privacy Policy</a>.</li>
       </ul>
       <h3>Data Retention</h3>
       <ul>
         <li>Local data remains until you delete it in the app or uninstall the app.</li>
+        <li>Deleting an entry in MoodFlow does not delete data already sent to Google Gemini; any copy Google keeps is governed by its terms.</li>
       </ul>
       <h3>Data Security</h3>
       <ul>
@@ -74,7 +76,7 @@
       <h2>Data Sharing</h2>
       <h3>Third Parties</h3>
       <ul>
-        <li>Google Gemini API (only when you use an optional AI feature)</li>
+        <li>Google Gemini API (only when you tap Generate weekly insights): receives the emotion, intensity, trigger tags, and full note text of each entry from the past 7 days</li>
       </ul>
       <p>We do <strong>not</strong> share your data with:</p>
       <ul>
@@ -85,11 +87,12 @@
       </ul>
 
       <h2>Third-Party Services</h2>
-      <p>MoodFlow includes <strong>optional</strong> AI features. When — and only when — you use an AI feature, the text you provide for that feature (for example, the diary, journal, mood, or goal entries you choose to process) is sent to <strong>Google&#x27;s Gemini API</strong> to generate a response. That text is processed by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. No data is sent to Google unless you actively trigger an AI feature.</p>
+      <p>MoodFlow includes one <strong>optional</strong> AI feature: AI weekly insights. When, and only when, you tap <strong>Generate weekly insights</strong> on the Insights screen (at least 3 entries from the past 7 days are needed), MoodFlow sends every mood entry from the past 7 days to <strong>Google&#x27;s Gemini API</strong> over HTTPS to generate a weekly trend and suggestions. For each entry it sends the emotion, the intensity (1-10), your trigger tags, and the full text of your note. Entry dates are not sent. Mood notes can contain sensitive personal or health information, so use this feature only if you are comfortable sharing those entries with Google. That data is processed by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>. No data is sent to Google unless you tap <strong>Generate weekly insights</strong>.</p>
       <p>MoodFlow uses <strong>no advertising, no analytics, and no crash-reporting services.</strong></p>
-      <p>Please review the relevant third-party privacy policy:</p>
+      <p>Please review the relevant third-party terms and privacy policy:</p>
       <ul>
         <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a></li>
       </ul>
 
       <h2>Permissions</h2>
@@ -129,7 +132,7 @@
       <p>We will respond as quickly as possible, typically within 48 hours.</p>
 
       <h2>Data Deletion</h2>
-      <p>MoodFlow does not require an account and stores your data only on your device.</p>
+      <p>MoodFlow does not require an account and stores your data on your device. Only AI weekly insight requests leave the device, as described above.</p>
       <h4>Option 1: In-App Deletion</h4>
       <ol>
         <li>Open MoodFlow</li>
@@ -159,9 +162,15 @@
         <li>On-device storage for your data</li>
         <li>Google Gemini for optional, user-initiated AI assistance</li>
       </ul>
-      <p>The app collects only what is needed for the features described in this policy, and keeps your data on your device.</p>
+      <p>The app collects only what is needed for the features described in this policy, and keeps your data on your device except for the AI weekly insight requests described above.</p>
       <hr>
-      <p><strong>Last Updated:</strong> July 5, 2026</p>
+      <p><strong>Last Updated:</strong> October 19, 2026</p>
+      <hr>
+      <h2>Recent Updates (Version 1.1.0 - October 19, 2026)</h2>
+      <ul>
+        <li><strong>Corrected the Google Gemini disclosure: AI weekly insights send the emotion, intensity, trigger tags, and full note text of each entry from the past 7 days.</strong></li>
+        <li><strong>Removed statements that all data stays on your device, and added a link to the Gemini API Additional Terms of Service.</strong></li>
+      </ul>
 
       <footer>&copy; 2026 SudarshanTechLabs. All rights reserved.</footer>
     </article>
